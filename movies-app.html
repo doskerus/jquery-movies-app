@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movies App!</title>
+	<link rel="icon" type="image/png" href="movie-512.png">
+
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+
+<body class="bg-light">
+	<div class="container">
+		<h1 class="display-3 text-center">Movies <i class="fas fa-film fa-sm"></i> App!</h1>
+		<br>
+		<form class="form-inline justify-content-around">
+			<div class="form-group">
+				<label for="title">Title</label>
+				<input class="form-control mx-3" type="text" id="title" required>
+			</div>
+			<div class="form-group">
+				<label for="rating">Rating</label>
+				<input class="form-control mx-3" type="number" id="rating" min="0" max="10" required>
+			</div>
+			<div class="form-group">
+				<button class="btn btn-success mx-3" type="submit" id="submit">Submit</button>
+			</div>
+		</form>
+		<br>
+		<table class="table table-hover">
+			<thead class="thead-light">
+				<tr class="row">
+					<th class="col-7" id="title">Title <i class="fas fa-video"></i></th>
+					<th class="col-3" id="rating">Rating <i class="fas fa-star-half-alt"></i></th>
+					<th class="col-2" id="delete">Delete <i class="fas fa-trash-alt"></i></th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="movies-app.js"></script>
+</body>
+
+</html>
